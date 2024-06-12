@@ -9,3 +9,5 @@ def large_subarray(lst):
 
 list1=[-2,1,-3,4,-1,2,1,-5,4]
 print(large_subarray(list1))
+
+# Smallest Subarray also same way
