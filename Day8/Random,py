@@ -1,0 +1,49 @@
+import random
+
+def demostrate_random_module():
+    print("Random Module Demostrate:")
+    
+    #random.random()- returns a random float in the range[0.0,1.0]
+    print("\nrandom.random():")
+    print(random.random())
+
+    #random.uniform(a,b)-returns a random float in the range[a,b]
+    print("\nrandom.uniform(1,10):")
+    print(random.uniform(1,10))
+    
+    print("\nrandom.randInt(1,10):")
+    print(random.randint(1,10))
+
+    #random.randint(start,stop,step)-returns a randomly selected element
+    print("\nrandom.randrange(1,10,2):")
+    print(random.randrange(1,10,2))
+
+    #random.choice(seq) -returns a randomly selected  element from a non empty list
+
+    my_list=[1,2,3,4,5]
+    print("\nrandom.choice([1,2,3,4,5]):")
+    print(random.choice(my_list))
+
+
+    print("\nrandom.choices([1,2,3,4,5],k=3):")
+    print(random.choices(my_list,k=3))
+
+    print("\nrandom.sample([1,2,3,4,5],k=3):")
+    print(random.sample(my_list,k=3))
+
+    print("\nrandom.shuffle([1,2,3,4,5]):")
+    random.shuffle(my_list)
+    print(my_list)
+
+    print("\nrandom.seed(10) and random.random():")
+    random.seed(10)
+    print(random.random())
+
+    print("\nrandom.getrandbits(5):")
+    print(random.getrandbits(5))
+
+    print("\nrandom.gauss(0,1):")
+    print(random.gauss(0,1))
+
+if __name__=="__main__":
+    demostrate_random_module()
